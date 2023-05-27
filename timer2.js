@@ -7,8 +7,9 @@ let test = 5;
 let timer = "";
 let timerBoard = document.getElementById('timerContainer')
 
-var sound1 = new Audio("https://hostinsomestuff.ucoz.site/_ld/0/1_timer_or_desk_b.mp3");
-console.log('main timer2.js');
+const sound1 = document.getElementById('timer_bell');
+// const sound1 = new Audio("https://hostinsomestuff.ucoz.site/_ld/0/1_timer_or_desk_b.mp3");
+// console.log('main timer2.js');
 
 
 
@@ -54,7 +55,7 @@ egg.addEventListener('mouseup', function (e) {
             //console.log(curXPos);
             if (curXPos <= 0) {
                 sound1.play();
-                setTimeout(checkEx(),1500);
+                setTimeout(checkEx(),3000);
                  //HERES THE AUDIO ALERT
                 // checkEx();
             }
